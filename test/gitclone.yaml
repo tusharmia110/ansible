@@ -1,0 +1,12 @@
+---
+- name: cloning 
+  hosts: webservers
+  gather_facts: no
+  vars_files:
+     - vault2.yaml
+
+  tasks: 
+  - name: cloning repo
+    git:
+      repo: https://tusharmia110:{{git_password }}@github.com/tusharmia110/vaulttest.git
+      dest: /home/ansadmin/valuttest

@@ -1,0 +1,5 @@
+---
+# vars file for tomcat_setup
+tomcat_url: https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.52/bin/apache-tomcat-10.1.52.tar.gz
+tomcat_package: apache-tomcat-10.1.52
+user_name: imran
