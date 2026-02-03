@@ -3,8 +3,10 @@
    hosts: all
    gather_facts: no
    become: true
-   vars: 
-     user_name: tushar
+   #   vars: 
+   #     user_name: tushar
+   vars_files: 
+      - /home/ansadmin/playbooks/user.yaml
 
    tasks:
    - name: creating user {{ user_name }}
